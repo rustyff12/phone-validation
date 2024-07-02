@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --bg-clr-main: #25283d;
+    --bg-clr-secondary: #a5a5a5;
+    --bg-clr-third: #ffba49;
+    --light: #fcf7f8;
+    --alert: #f64740;
+    --confirm: #2ba84a;
+    --black: #262626;
+}
+
+body {
+    background-color: var(--bg-clr-main);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: var(--light);
+    margin-top: 1rem;
+}
+
+.main-container {
+    height: 80svh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.input-container,
+.result-container {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.input-container {
+    background-color: var(--bg-clr-secondary);
+    gap: 1rem;
+}
+
+#user-input {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.125rem;
+    border: 2px solid var(--black);
+    color: var(--black);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn#check-btn:hover {
+    background-color: var(--confirm);
+}
+.btn#clear-btn:hover {
+    background-color: var(--alert);
+}
+
+.result-container {
+    background-color: var(--bg-clr-third);
+}
